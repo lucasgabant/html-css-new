@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(71, 71, 239);
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: rgb(87, 87, 87);
+            padding: 3px;
+            box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.315);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            margin-right: 30px;
+
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px 0px;
+            box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.323);
+        }
+
+        article {
+            background-color: lightgrey;
+        }
+
+        article > aside {
+            background-color: lightslategray;
+            padding: 5px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 80px;
+            width: 80px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 40px
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esporte Notícia Tecnologia Variedades</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi natus atque facere voluptates molestias excepturi recusandae beatae! Deserunt, nisi consequatur, quasi laboriosam praesentium eaque accusamus sint animi, dolor numquam officia hic voluptatem cupiditate. Nemo sit recusandae incidunt illo laudantium assumenda repudiandae inventore similique, dicta aspernatur, vero quidem eos quisquam quibusdam quia! Commodi ea nulla ipsam amet, repudiandae explicabo. Magnam soluta eius veritatis rerum qui quaerat. Deserunt ex adipisci nobis distinctio vitae veniam magni dolor molestias est error quis, rerum recusandae.</p>
+                <aside>
+                    <p>Escrito por tal</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Pereiraldo Edneira</p>
+    </footer>
+
+    <div id="bola"></div>
+</body>
+</html>
