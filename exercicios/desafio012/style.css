@@ -10,7 +10,13 @@
     --fonte-texto: 'Sriracha', cursive;
 }
 
-body {
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-width: 100%;
     display: block;
 }
 
@@ -18,13 +24,13 @@ header {
     background-color: black;
     color: white;
     text-align: center;
+    font-variant: small-caps;
 }
 
 header > h1 {
     padding-top: 50px;
     font-family: var(--fonte-cabeca);
-    font-size: 10vh;
-    margin: 0px;
+    font-size: 20vh;
 }
 
 header > p {
@@ -33,6 +39,48 @@ header > p {
 }
 
 header a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-family: var(--fonte-texto);
+    font-size: 7vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.img01 > p {
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.175);
+    color: white;
+}
+
+section.img01 {
+    background-image: url(imagens/background001.jpg);
+}
+
+section.img02 {
+    background-color: darkgreen;
+    background-image: url(imagens/background002.jpg);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    text-size: 0.8em;
+}
+
+footer a {
     color: white;
     text-decoration: none;
 }
