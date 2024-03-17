@@ -24,13 +24,13 @@ header {
     background-color: black;
     color: white;
     text-align: center;
-    font-variant: small-caps;
 }
 
 header > h1 {
     padding-top: 50px;
     font-family: var(--fonte-cabeca);
-    font-size: 20vh;
+    font-size: 15vh;
+    font-variant: small-caps;
 }
 
 header > p {
@@ -51,24 +51,38 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     font-family: var(--fonte-texto);
-    font-size: 7vh;
+    font-size: 3.5vw;
     line-height: 2em;
     padding-left: 30px;
 }
 
-section.img01 > p {
-    width: 600px;
-    background-color: rgba(0, 0, 0, 0.175);
-    color: white;
+section > p {
+    padding-bottom: 2em;
 }
 
-section.img01 {
-    background-image: url(imagens/background001.jpg);
-}
-
-section.img02 {
+section.img {
     background-color: darkgreen;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.351);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.img > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.475);
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#d1 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+}
+
+section#d2 {
     background-image: url(imagens/background002.jpg);
+    background-position: right center;
 }
 
 footer {
